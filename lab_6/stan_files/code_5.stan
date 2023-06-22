@@ -25,6 +25,6 @@ generated quantities {
    array [N] real y_hat;
    for (j in 1:N) {
     log_lik[j] = normal_lpdf(y[j] | mu[j], sigma);
-    y_hat[j] normal_rng(mu[j], sigma);
+    y_hat[j] = normal_rng(mu[j], sigma);
    }
 }

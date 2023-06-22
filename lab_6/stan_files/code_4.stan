@@ -20,6 +20,6 @@ generated quantities {
    array [N] real y_hat;
    for (j in 1:N) {
     log_lik[j] = student_t_lpdf(y[j]|nu,mu,sigma);
-    y_hat{j} = student_t_rng(nu,mu,sigma);
+    y_hat[j] = student_t_rng(nu,mu,sigma);
    }
 }

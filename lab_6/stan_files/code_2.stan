@@ -12,7 +12,7 @@ generated quantities {
     }
 
     vector [3] beta;
-    beta = [2, 1, 0, 5];
+    beta = [2, 1, 0, 5]';
     array [N] real y;
     y = normal_rng(X*beta, 1);
 }
